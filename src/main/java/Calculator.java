@@ -3,5 +3,8 @@ public class Calculator {
     Calculator(String name){
         this.name = name;
     }
+    public int add(int x,int y){
+        return x+y;
+    }
 
 }
