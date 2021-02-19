@@ -20,7 +20,4 @@ public class Calculator {
             fact*=i;
         return fact;
     }
-
-
-
 }
