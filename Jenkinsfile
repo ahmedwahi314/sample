@@ -1,8 +1,8 @@
 pipeline {
     environment{
         registry = "byterider/cal"
-        dockerImage = ''
         registryCredential = 'dockerhub'
+        dockerImage = ''
     }
     agent any
 
@@ -30,7 +30,7 @@ pipeline {
         stage('Build Docker Image'){
             steps{
                 script{
-                    dockerImage = docker.build registry + ":BUILD_NUMBER";
+                    dockerImage = docker.build registry + ":BUILD_NUMBER"
                 }
             }
         }
