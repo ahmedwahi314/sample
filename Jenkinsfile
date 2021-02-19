@@ -7,7 +7,7 @@ pipeline {
     agent any
 
     stages {
-        stage('SCM Chekout'){
+        stage('SCM Checkout'){
             steps{
                 git 'https://github.com/SEETHAMRAJU/calculator.git'
             }
@@ -50,5 +50,8 @@ pipeline {
                 sh "docker image prune"
             }
         }
+//         stage('Deploy on Node'){
+
+//         }
     }
 }
