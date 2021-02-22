@@ -51,19 +51,16 @@ pipeline {
             }
         }
         stage('Deploy on Node'){
-            agent any
-            script{
-                step([
-                            $class: "RundeckNotifier",
-//                             includeRundeckLogs: true,
-                            rundeckInstance: "myRundeck",
-                            options: """ Build_Number=$BUILD_NUMBER
-                            """,
-                            jobId: "b6b65fd4-0f56-4049-b608-837207c1a844",
-//                             shouldWaitForRundeckJob: true,
-                            shouldFailTheBuild: true,
-//                             tailLog: true
-                          ])
+            steps{
+                script{
+                    step([
+                                $class: "RundeckNotifier",
+                                rundeckInstance: "myRundeck",
+                                options: """ Build_Number=$BUILD_NUMBER""",
+                                jobId: "b6b65fd4-0f56-4049-b608-837207c1a844",
+                                shouldFailTheBuild: true,
+                    ])
+                }
             }
         }
     }
