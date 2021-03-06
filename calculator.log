@@ -1,0 +1,12 @@
+05/Mar/2021:14:10:31 197 [Calculator.java] [INFO] Calculator [CALCULATOR my_calc CREATED]
+05/Mar/2021:14:10:31 202 [Calculator.java] [INFO] Calculator [SQRT_FN] : 4.0
+05/Mar/2021:14:10:31 202 [Calculator.java] [INFO] Calculator [SQRT_FN - RESULT] : 2.0
+05/Mar/2021:14:10:31 202 [Calculator.java] [INFO] Calculator [SQRT_FN] : 5.0
+05/Mar/2021:14:10:31 202 [Calculator.java] [INFO] Calculator [SQRT_FN - RESULT] : 2.23606797749979
+05/Mar/2021:14:10:31 204 [Calculator.java] [INFO] Calculator [CALCULATOR my_calc CREATED]
+05/Mar/2021:14:10:31 204 [Calculator.java] [INFO] Calculator [FACTORIAL] : 4
+05/Mar/2021:14:10:31 204 [Calculator.java] [INFO] Calculator [FACTORIAL - RESULT] : 24
+05/Mar/2021:14:10:31 205 [Calculator.java] [INFO] Calculator [FACTORIAL] : 0
+05/Mar/2021:14:10:31 205 [Calculator.java] [INFO] Calculator [FACTORIAL - RESULT] : 1
+05/Mar/2021:14:10:31 205 [Calculator.java] [INFO] Calculator [FACTORIAL] : -2
+05/Mar/2021:14:10:31 206 [Calculator.java] [INFO] Calculator [FACTORIAL - RESULT] : 0
