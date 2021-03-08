@@ -7,7 +7,6 @@ public class Calculator {
 
     Calculator(String name){
         this.name = name;
-//        logger.info("[CALCULATOR " + name + " CREATED]");
     }
 
     public double sqrt_f(double x){
