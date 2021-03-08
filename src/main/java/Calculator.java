@@ -1,6 +1,6 @@
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-//import org.apache.log4j.Property;
+import java.lang.Math;
 public class Calculator {
     String name;
     private final static Logger logger = LogManager.getLogger();
@@ -16,8 +16,23 @@ public class Calculator {
         logger.info("[SQRT_FN - RESULT] : "+answer);
         return answer;
     }
-//    Logarithm base natural
-//    power function
+    public double logarithm(double x){
+        logger.info("[LOG] : "+x);
+        logger.info("[LOG - RESULT] : "+Math.log(x));
+        return Math.log(x);
+    }
+    public double power(double x,int y){
+        logger.info("[POWER] : "+x+", "+y);
+        double answer =1.0;
+        if(y==0) {
+            logger.info("[POWER - RESULT] : "+answer);
+            return answer;
+        }
+        for(int i=0;i<y;i++)
+            answer *= x;
+        logger.info("[POWER - RESULT] : "+answer);
+        return answer;
+    }
     public int factorial(int x){
         int fact = 1;
         logger.info("[FACTORIAL] : "+x);

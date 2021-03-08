@@ -22,4 +22,28 @@ public class CalculatorTest {
         x = c.factorial(-2);
         assertEquals(0,x);
     }
+
+    @Test
+    public void power_test(){
+        Calculator c = new Calculator("my_calc");
+
+        double x = c.power(2,2);
+        assertEquals(4.0,x,0.0001);
+        x = c.power(10,0);
+        assertEquals(1,x,0.001);
+        x = c.power(5,3);
+        assertEquals(125,x,0.00001);
+    }
+
+    @Test
+    public void logarithmic_test(){
+        Calculator c = new Calculator("my");
+        double x = c.logarithm(Math.exp(4));
+        assertEquals(x,4,0.005);
+        x = c.logarithm(Math.exp(2));
+        assertEquals(x,2,0.001);
+        x = c.logarithm(1);
+        assertEquals(x,0,0.0001);
+
+    }
 }
