@@ -1,17 +1,6 @@
-FROM jamesdbloom/docker-java8-maven AS maven_builder
-WORKDIR /build
-COPY pom.xml .
+FROM tomcat:9.0
 
-COPY src/ /build/src
-RUN mvn clean install
+ADD target/calculatorweb-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/
+#COPY target/calculatorweb-1.0-SNAPSHOT /usr/local/tomcat/webapps/
+CMD ["catalina.sh", "run"]
 
-
-FROM openjdk:8-jre
-
-COPY --from=maven_builder /build/target/calculator-1.0-SNAPSHOT-jar-with-dependencies.jar .
-COPY input.txt .
-
-#We can either use CMD or ENTRYPOINT. But for the sake of trying all possible commands
-
-CMD java -jar calculator-1.0-SNAPSHOT-jar-with-dependencies.jar < ./input.txt
-#ENTRYPOINT ["java","-jar" ,"calculator-1.0-SNAPSHOT.jar", "Driver"]
