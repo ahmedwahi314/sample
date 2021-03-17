@@ -38,6 +38,7 @@ public class Driver {
                 default:
                     System.out.println("Sorry wrong option");
             }
+            System.out.println("--------------------------------------------------------------------");
         }
     }
 

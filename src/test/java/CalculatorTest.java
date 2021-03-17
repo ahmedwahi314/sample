@@ -8,9 +8,11 @@ public class CalculatorTest {
     public void sqrt_test() {
         Calculator c = new Calculator("my_calc");
         double x = c.sqrt_f(4);
+        // True Positve
         assertEquals(2.0,x,0.0);
         x = c.sqrt_f(5);
         assertEquals(2.23606797749979,x,0.005);
+
     }
     @Test
     public void factorial_test() {
@@ -44,6 +46,7 @@ public class CalculatorTest {
         assertEquals(x,2,0.001);
         x = c.logarithm(1);
         assertEquals(x,0,0.0001);
-
+        x = c.logarithm(-1);
+        assertEquals(x,-1,0.001);
     }
 }

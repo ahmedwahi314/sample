@@ -17,6 +17,10 @@ public class Calculator {
     }
     public double logarithm(double x){
         logger.info("[LOG] : "+x);
+        if(x<=0){
+            logger.info("[LOG - RESULT] : INVALID_INPUT");
+            return -1;
+        }
         logger.info("[LOG - RESULT] : "+Math.log(x));
         return Math.log(x);
     }
