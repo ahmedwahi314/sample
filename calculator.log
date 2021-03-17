@@ -20,3 +20,25 @@
 16/Mar/2021:09:51:35 707 [Calculator.java] [INFO] calc.Calculator [LOG - RESULT] : 2.0
 16/Mar/2021:09:51:35 707 [Calculator.java] [INFO] calc.Calculator [LOG] : 1.0
 16/Mar/2021:09:51:35 707 [Calculator.java] [INFO] calc.Calculator [LOG - RESULT] : 0.0
+17/Mar/2021:18:49:45 280 [Calculator.java] [INFO] calc.Calculator [SQRT_FN] : 4.0
+17/Mar/2021:18:49:45 322 [Calculator.java] [INFO] calc.Calculator [SQRT_FN - RESULT] : 2.0
+17/Mar/2021:18:49:45 326 [Calculator.java] [INFO] calc.Calculator [SQRT_FN] : 5.0
+17/Mar/2021:18:49:45 326 [Calculator.java] [INFO] calc.Calculator [SQRT_FN - RESULT] : 2.23606797749979
+17/Mar/2021:18:49:45 335 [Calculator.java] [INFO] calc.Calculator [POWER] : 2.0, 2
+17/Mar/2021:18:49:45 336 [Calculator.java] [INFO] calc.Calculator [POWER - RESULT] : 4.0
+17/Mar/2021:18:49:45 336 [Calculator.java] [INFO] calc.Calculator [POWER] : 10.0, 0
+17/Mar/2021:18:49:45 337 [Calculator.java] [INFO] calc.Calculator [POWER - RESULT] : 1.0
+17/Mar/2021:18:49:45 337 [Calculator.java] [INFO] calc.Calculator [POWER] : 5.0, 3
+17/Mar/2021:18:49:45 337 [Calculator.java] [INFO] calc.Calculator [POWER - RESULT] : 125.0
+17/Mar/2021:18:49:45 339 [Calculator.java] [INFO] calc.Calculator [FACTORIAL] : 4
+17/Mar/2021:18:49:45 340 [Calculator.java] [INFO] calc.Calculator [FACTORIAL - RESULT] : 24
+17/Mar/2021:18:49:45 340 [Calculator.java] [INFO] calc.Calculator [FACTORIAL] : 0
+17/Mar/2021:18:49:45 340 [Calculator.java] [INFO] calc.Calculator [FACTORIAL - RESULT] : 1
+17/Mar/2021:18:49:45 340 [Calculator.java] [INFO] calc.Calculator [FACTORIAL] : -2
+17/Mar/2021:18:49:45 340 [Calculator.java] [INFO] calc.Calculator [FACTORIAL - RESULT] : 0
+17/Mar/2021:18:49:45 342 [Calculator.java] [INFO] calc.Calculator [LOG] : 54.598150033144236
+17/Mar/2021:18:49:45 343 [Calculator.java] [INFO] calc.Calculator [LOG - RESULT] : 4.0
+17/Mar/2021:18:49:45 343 [Calculator.java] [INFO] calc.Calculator [LOG] : 7.38905609893065
+17/Mar/2021:18:49:45 343 [Calculator.java] [INFO] calc.Calculator [LOG - RESULT] : 2.0
+17/Mar/2021:18:49:45 343 [Calculator.java] [INFO] calc.Calculator [LOG] : 1.0
+17/Mar/2021:18:49:45 344 [Calculator.java] [INFO] calc.Calculator [LOG - RESULT] : 0.0
