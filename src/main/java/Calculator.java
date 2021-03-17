@@ -11,7 +11,9 @@ public class Calculator {
 
     public double sqrt_f(double x){
         logger.info("[SQRT_FN] : "+x);
-        double answer = Math.sqrt(x);
+        double answer = 0.0;
+	if(x>=0)
+		answer = Math.sqrt(x);
         logger.info("[SQRT_FN - RESULT] : "+answer);
         return answer;
     }
