@@ -1,7 +1,7 @@
-#README for Calculator
+# README for Calculator
 
 This a simple terminal version of the calculator. 
-##BUild Image
+## Build Image
 
 To build the docker image clone the repo and follow the comamnds below
 Make your changes
@@ -14,7 +14,7 @@ Make your changes
     docker run -e MODE="<mode>" -it <tagname>
 ```
 
-##Direct Usage
+## Direct Usage
 
 To use the docker image directly follow the below commands 
 
@@ -24,7 +24,7 @@ To use the docker image directly follow the below commands
     
 ```
 
-##Arguments and Environments
+## Arguments and Environments
 _tagnumber_: tag number of the docker image can be used. For latest tagnumber check the [registry](https://hub.docker.com/r/byterider/cal) .<br>
 _mode_: This is basically the environment: "DEV", "PROD".
 
