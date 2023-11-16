@@ -1,7 +1,7 @@
 pipeline {
     environment{
-        registry = "byterider/cal"
-        registryCredential = 'dockerhub'
+        registry = "ahmedwahi314/myrepo"
+        registryCredential = 'mydocker'
         dockerImage = ''
     }
     agent any
@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('SCM Checkout'){
             steps{
-                git 'https://github.com/SEETHAMRAJU/calculator.git'
+                git 'https://github.com/ahmedwahi314/sample.git'
             }
         }
         stage('Clean'){
@@ -50,18 +50,6 @@ pipeline {
                 sh "docker image prune"
             }
         }
-        stage('Deploy on Node'){
-            steps{
-                script{
-                    step([
-                                $class: "RundeckNotifier",
-                                rundeckInstance: "myRundeck",
-                                options: """ Build_Number=$BUILD_NUMBER""",
-                                jobId: "b6b65fd4-0f56-4049-b608-837207c1a844",
-                                shouldFailTheBuild: true,
-                    ])
-                }
-            }
-        }
+
     }
 }
